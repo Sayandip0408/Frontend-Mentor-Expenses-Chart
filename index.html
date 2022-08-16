@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="balance_div">
+      <p>My balance</p>
+      <h1 id="balance">$921.48</h1>
+      <div id="filled"></div>
+      <div id="transparent"></div>
+    </div>
+    <div id="chart-div">
+      <h1>Spending - Last 7 days</h1>
+      <div id="chart">
+        <div id="day1" onmouseover="show(0)" onmouseout="hide(0)">
+          <div class="percentage" id="per1"></div>
+        </div>
+        <div id="day2" onmouseover="show(1)" onmouseout="hide(1)">
+          <div class="percentage" id="per2"></div>
+        </div>
+        <div id="day3" onmouseover="show(2)" onmouseout="hide(2)">
+          <div class="percentage" id="per3"></div>
+        </div>
+        <div id="day4" onmouseover="show(3)" onmouseout="hide(3)">
+          <div class="percentage" id="per4"></div>
+        </div>
+        <div id="day5" onmouseover="show(4)" onmouseout="hide(4)">
+          <div class="percentage" id="per5"></div>
+        </div>
+        <div id="day6" onmouseover="show(5)" onmouseout="hide(5)">
+          <div class="percentage" id="per6"></div>
+        </div>
+        <div id="day7" onmouseover="show(6)" onmouseout="hide(6)">
+          <div class="percentage" id="per7"></div>
+        </div>
+      </div>
+      <div id="days">
+        <div class="day" id="d1"></div>
+        <div class="day" id="d2"></div>
+        <div class="day" id="d3"></div>
+        <div class="day" id="d4"></div>
+        <div class="day" id="d5"></div>
+        <div class="day" id="d6"></div>
+        <div class="day" id="d7"></div>
+      </div>
+      <div id="summary">
+        <p>Total this month</p>
+        <h1 id="expense">$478.33</h1>
+        <div id="performance">
+          <p class="percent">+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(27, 66%, 92%);
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#container {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+}
+
+#balance_div {
+    height: 100px;
+    /* width: 100%; */
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#balance_div p {
+    color: hsl(33, 100%, 98%);
+}
+
+#balance {
+    color: hsl(33, 100%, 98%);
+    font-weight: bolder;
+}
+
+#transparent {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    border: 2px solid hsl(33, 100%, 98%);
+}
+
+#filled {
+    background-color: hsl(25, 47%, 15%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+
+
+#chart-div {
+    background-color: hsl(33, 100%, 98%);
+    height: 430px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 20px 20px;
+    position: relative;
+}
+
+#chart-div h1 {
+    color: hsl(25, 47%, 15%);
+    font-size: 1.6rem;
+}
+
+#chart {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+#chart #day1,
+#day2,
+#day3,
+#day4,
+#day5,
+#day6,
+#day7 {
+    width: 20%;
+    height: 100px;
+    margin: 0 8px;
+    border-radius: 5px;
+    background-color: hsl(10, 79%, 65%);
+    position: relative;
+    cursor: pointer;
+}
+
+#days {
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#days #d1,
+#d2,
+#d3,
+#d4,
+#d5,
+#d6,
+#d7 {
+    width: 40px;
+    margin: 2px 8px;
+    color: hsl(28, 10%, 53%);
+    font-size: 13px;
+    text-align: center;
+}
+
+#summary {
+    padding: 30px 10px;
+    position: relative;
+}
+
+#summary p {
+    color: hsl(28, 10%, 53%);
+}
+
+#chart-div #expense {
+    margin: 5px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+#performance {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    text-align: end;
+}
+
+#performance .percent {
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+#day1 .percentage,
+#day2 .percentage,
+#day3 .percentage,
+#day4 .percentage,
+#day5 .percentage,
+#day6 .percentage,
+#day7 .percentage {
+    border: 1px solid black;
+    width: 150%;
+    height: 35px;
+    margin: 0 8px;
+    position: absolute;
+    top: -45px;
+    left: -19px;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 5px;
+    color: hsl(33, 100%, 98%);
+    padding: 6px 2px;
+    text-align: center;
+    display: none;
+    font-weight: 700;
+}
