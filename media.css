@@ -1,0 +1,17 @@
+@media (max-width: 450px) {
+    #container {
+        width: 95vw;
+    }
+
+    #day1 .percentage,
+    #day2 .percentage,
+    #day3 .percentage,
+    #day4 .percentage,
+    #day5 .percentage,
+    #day6 .percentage,
+    #day7 .percentage {
+        font-size: 13px;
+        padding: 8px 2px;
+    }
+
+}
